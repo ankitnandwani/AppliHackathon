@@ -1,0 +1,21 @@
+Task: 1, Test Name: SearchBar, DOM Id: INPUTtext____42, Browser: chrome, Viewport: 1200x700, Device: laptop, Status: Pass
+Task: 1, Test Name: SearchBar, DOM Id: INPUTtext____42, Browser: firefox, Viewport: 1200x700, Device: laptop, Status: Pass
+Task: 1, Test Name: SearchBar, DOM Id: INPUTtext____42, Browser: edge, Viewport: 1200x700, Device: laptop, Status: Pass
+Task: 1, Test Name: SearchBar, DOM Id: INPUTtext____42, Browser: chrome, Viewport: 768x700, Device: tablet, Status: Pass
+Task: 1, Test Name: SearchBar, DOM Id: INPUTtext____42, Browser: firefox, Viewport: 768x700, Device: tablet, Status: Pass
+Task: 1, Test Name: SearchBar, DOM Id: INPUTtext____42, Browser: edge, Viewport: 768x700, Device: tablet, Status: Pass
+Task: 1, Test Name: SearchBar, DOM Id: INPUTtext____42, Browser: chrome, Viewport: 500x700, Device: mobile, Status: Pass
+Task: 1, Test Name: Magnifying glass, DOM Id: A__btnsearchm__59, Browser: chrome, Viewport: 1200x700, Device: laptop, Status: Pass
+Task: 1, Test Name: Magnifying glass, DOM Id: A__btnsearchm__59, Browser: firefox, Viewport: 1200x700, Device: laptop, Status: Pass
+Task: 1, Test Name: Magnifying glass, DOM Id: A__btnsearchm__59, Browser: edge, Viewport: 1200x700, Device: laptop, Status: Pass
+Task: 1, Test Name: Magnifying glass, DOM Id: A__btnsearchm__59, Browser: chrome, Viewport: 768x700, Device: tablet, Status: Pass
+Task: 1, Test Name: Magnifying glass, DOM Id: A__btnsearchm__59, Browser: firefox, Viewport: 768x700, Device: tablet, Status: Pass
+Task: 1, Test Name: Magnifying glass, DOM Id: A__btnsearchm__59, Browser: edge, Viewport: 768x700, Device: tablet, Status: Pass
+Task: 1, Test Name: Magnifying glass, DOM Id: A__btnsearchm__59, Browser: chrome, Viewport: 500x700, Device: mobile, Status: Pass
+Task: 1, Test Name: Filter, DOM Id: SPAN__checkmark__112, Browser: chrome, Viewport: 1200x700, Device: laptop, Status: Pass
+Task: 1, Test Name: Filter, DOM Id: SPAN__checkmark__112, Browser: firefox, Viewport: 1200x700, Device: laptop, Status: Pass
+Task: 1, Test Name: Filter, DOM Id: SPAN__checkmark__112, Browser: edge, Viewport: 1200x700, Device: laptop, Status: Pass
+Task: 1, Test Name: Filter, DOM Id: SPAN__checkmark__112, Browser: chrome, Viewport: 768x700, Device: tablet, Status: Pass
+Task: 1, Test Name: Filter, DOM Id: SPAN__checkmark__112, Browser: firefox, Viewport: 768x700, Device: tablet, Status: Pass
+Task: 1, Test Name: Filter, DOM Id: SPAN__checkmark__112, Browser: edge, Viewport: 768x700, Device: tablet, Status: Pass
+Task: 1, Test Name: Filter, DOM Id: SPAN__checkmark__112, Browser: chrome, Viewport: 500x700, Device: mobile, Status: Pass
