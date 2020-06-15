@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="9" failures="0" name="com.ankitnandwani.cucumber.RunCukesTest" time="36.434" errors="0" skipped="4">
+<testsuite tests="105" failures="14" name="com.ankitnandwani.cucumber.RunCukesTest" time="56.027" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_221\jre\bin"/>
     <property name="java.vm.version" value="25.221-b11"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Workspace\Automation\AppliHackathon\ModernTestsV1"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Workspace\Automation\AppliHackathon\TraditionalTestsV1"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=";"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Workspace\Automation\AppliHackathon\ModernTestsV1"/>
+    <property name="user.dir" value="C:\Workspace\Automation\AppliHackathon\TraditionalTestsV1"/>
     <property name="java.runtime.version" value="1.8.0_221-b11"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_221\jre\lib\endorsed"/>
@@ -64,40 +64,291 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Scenario: Product Details Test" name="Given I am at AppliFashion Homepage for Task 3 test" time="0.002"/>
-  <testcase classname="Scenario: Product Details Test" name="When I click on first black shoe and product details page is displayed" time="0"/>
-  <testcase classname="Scenario: Product Details Test" name="Then Page should be displayed correctly for step Product Details test" time="0"/>
-  <testcase classname="Scenario: Product Details Test" name="Scenario: Product Details Test" time="24.776"/>
-  <testcase classname="Scenario: Verify Homepage" name="Given I am at AppliFashion Homepage" time="2.085">
-    <skipped/>
-    <system-err>Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 20369
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully.
-Jun 11, 2020 1:40:17 AM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
-</system-err>
+  <testcase classname="| chrome | 1200 | 700 | laptop |" name="Given I run the test on chrome with 1200 and 700" time="0.006"/>
+  <testcase classname="| chrome | 1200 | 700 | laptop |" name="And I am at AppliFashion Homepage for Task 1 test in laptop" time="0"/>
+  <testcase classname="| chrome | 1200 | 700 | laptop |" name="When I do nothing" time="0.001"/>
+  <testcase classname="| chrome | 1200 | 700 | laptop |" name="Then SearchBar should be displayed correctly" time="0.001"/>
+  <testcase classname="| chrome | 1200 | 700 | laptop |" name="| chrome | 1200 | 700 | laptop |" time="1.06"/>
+  <testcase classname="| firefox | 1200 | 700 | laptop |" name="Given I run the test on firefox with 1200 and 700" time="0"/>
+  <testcase classname="| firefox | 1200 | 700 | laptop |" name="And I am at AppliFashion Homepage for Task 1 test in laptop" time="0"/>
+  <testcase classname="| firefox | 1200 | 700 | laptop |" name="When I do nothing" time="0"/>
+  <testcase classname="| firefox | 1200 | 700 | laptop |" name="Then SearchBar should be displayed correctly" time="0"/>
+  <testcase classname="| firefox | 1200 | 700 | laptop |" name="| firefox | 1200 | 700 | laptop |" time="13.205"/>
+  <testcase classname="| edge | 1200 | 700 | laptop |" name="Given I run the test on edge with 1200 and 700" time="0"/>
+  <testcase classname="| edge | 1200 | 700 | laptop |" name="And I am at AppliFashion Homepage for Task 1 test in laptop" time="0"/>
+  <testcase classname="| edge | 1200 | 700 | laptop |" name="When I do nothing" time="0"/>
+  <testcase classname="| edge | 1200 | 700 | laptop |" name="Then SearchBar should be displayed correctly" time="0"/>
+  <testcase classname="| edge | 1200 | 700 | laptop |" name="| edge | 1200 | 700 | laptop |" time="1.187"/>
+  <testcase classname="| chrome | 768 | 700 | tablet |" name="Given I run the test on chrome with 768 and 700" time="0"/>
+  <testcase classname="| chrome | 768 | 700 | tablet |" name="And I am at AppliFashion Homepage for Task 1 test in tablet" time="0"/>
+  <testcase classname="| chrome | 768 | 700 | tablet |" name="When I do nothing" time="0"/>
+  <testcase classname="| chrome | 768 | 700 | tablet |" name="Then SearchBar should be displayed correctly" time="0"/>
+  <testcase classname="| chrome | 768 | 700 | tablet |" name="| chrome | 768 | 700 | tablet |" time="0.701"/>
+  <testcase classname="| firefox | 768 | 700 | tablet |" name="Given I run the test on firefox with 768 and 700" time="0"/>
+  <testcase classname="| firefox | 768 | 700 | tablet |" name="And I am at AppliFashion Homepage for Task 1 test in tablet" time="0"/>
+  <testcase classname="| firefox | 768 | 700 | tablet |" name="When I do nothing" time="0"/>
+  <testcase classname="| firefox | 768 | 700 | tablet |" name="Then SearchBar should be displayed correctly" time="0"/>
+  <testcase classname="| firefox | 768 | 700 | tablet |" name="| firefox | 768 | 700 | tablet |" time="11.38"/>
+  <testcase classname="| edge | 768 | 700 | tablet |" name="Given I run the test on edge with 768 and 700" time="0"/>
+  <testcase classname="| edge | 768 | 700 | tablet |" name="And I am at AppliFashion Homepage for Task 1 test in tablet" time="0"/>
+  <testcase classname="| edge | 768 | 700 | tablet |" name="When I do nothing" time="0"/>
+  <testcase classname="| edge | 768 | 700 | tablet |" name="Then SearchBar should be displayed correctly" time="0"/>
+  <testcase classname="| edge | 768 | 700 | tablet |" name="| edge | 768 | 700 | tablet |" time="1.205"/>
+  <testcase classname="| chrome | 500 | 700 | mobile |" name="Given I run the test on chrome with 500 and 700" time="0"/>
+  <testcase classname="| chrome | 500 | 700 | mobile |" name="And I am at AppliFashion Homepage for Task 1 test in mobile" time="0"/>
+  <testcase classname="| chrome | 500 | 700 | mobile |" name="When I do nothing" time="0"/>
+  <testcase classname="| chrome | 500 | 700 | mobile |" name="Then SearchBar should be displayed correctly" time="0.005">
+    <failure message="
+The following assertion failed:
+1) expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+" type="org.assertj.core.api.SoftAssertionError">org.assertj.core.api.SoftAssertionError: 
+The following assertion failed:
+1) expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:75)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at com.ankitnandwani.cucumber.StepDefs.GridPage.SearchBarShouldBeDisplayedCorrectly(GridPage.java:88)
+	at ✽.Then SearchBar should be displayed correctly(com/ankitnandwani/cucumber/Features/GridPage.feature:8)
+</failure>
   </testcase>
-  <testcase classname="Scenario: Verify Homepage" name="When I do nothing" time="2.085">
-    <skipped/>
+  <testcase classname="| chrome | 500 | 700 | mobile |" name="| chrome | 500 | 700 | mobile |" time="0.006">
+    <failure message="
+The following assertion failed:
+1) expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+" type="org.assertj.core.api.SoftAssertionError">org.assertj.core.api.SoftAssertionError: 
+The following assertion failed:
+1) expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:75)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at com.ankitnandwani.cucumber.StepDefs.GridPage.SearchBarShouldBeDisplayedCorrectly(GridPage.java:88)
+	at ✽.Then SearchBar should be displayed correctly(com/ankitnandwani/cucumber/Features/GridPage.feature:8)
+</failure>
   </testcase>
-  <testcase classname="Scenario: Verify Homepage" name="Then Page should be displayed correctly" time="2.085">
-    <skipped/>
+  <testcase classname="| chrome | 1200 | 700 | laptop |" name="Given I run the test on chrome with 1200 and 700" time="0"/>
+  <testcase classname="| chrome | 1200 | 700 | laptop |" name="And I am at AppliFashion Homepage for Task 1 test in laptop" time="0"/>
+  <testcase classname="| chrome | 1200 | 700 | laptop |" name="When I do nothing" time="0"/>
+  <testcase classname="| chrome | 1200 | 700 | laptop |" name="Then Magnifying glass should be displayed correctly" time="0">
+    <failure message="
+The following assertion failed:
+1) expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+" type="org.assertj.core.api.SoftAssertionError">org.assertj.core.api.SoftAssertionError: 
+The following assertion failed:
+1) expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:75)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at com.ankitnandwani.cucumber.StepDefs.GridPage.MagnifyingGlassShouldBeDisplayedCorrectly(GridPage.java:123)
+	at ✽.Then Magnifying glass should be displayed correctly(com/ankitnandwani/cucumber/Features/GridPage.feature:25)
+</failure>
   </testcase>
-  <testcase classname="Scenario: Verify Homepage" name="Scenario: Verify Homepage" time="2.7">
-    <skipped/>
-    <system-out>result summary {
-	all results=
-		
-	passed=0
-	unresolved=0
-	failed=0
-	exceptions=0
-	mismatches=0
-	missing=0
-	matches=0
-}
-</system-out>
+  <testcase classname="| chrome | 1200 | 700 | laptop |" name="| chrome | 1200 | 700 | laptop |" time="0">
+    <failure message="
+The following assertion failed:
+1) expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+" type="org.assertj.core.api.SoftAssertionError">org.assertj.core.api.SoftAssertionError: 
+The following assertion failed:
+1) expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:75)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at com.ankitnandwani.cucumber.StepDefs.GridPage.MagnifyingGlassShouldBeDisplayedCorrectly(GridPage.java:123)
+	at ✽.Then Magnifying glass should be displayed correctly(com/ankitnandwani/cucumber/Features/GridPage.feature:25)
+</failure>
   </testcase>
-  <testcase classname="Scenario: Verify Homepage" name="Scenario: Verify Homepage" time="2.701"/>
+  <testcase classname="| firefox | 1200 | 700 | laptop |" name="Given I run the test on firefox with 1200 and 700" time="0"/>
+  <testcase classname="| firefox | 1200 | 700 | laptop |" name="And I am at AppliFashion Homepage for Task 1 test in laptop" time="0"/>
+  <testcase classname="| firefox | 1200 | 700 | laptop |" name="When I do nothing" time="0"/>
+  <testcase classname="| firefox | 1200 | 700 | laptop |" name="Then Magnifying glass should be displayed correctly" time="0">
+    <failure message="
+The following assertion failed:
+1) expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+" type="org.assertj.core.api.SoftAssertionError">org.assertj.core.api.SoftAssertionError: 
+The following assertion failed:
+1) expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:75)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at com.ankitnandwani.cucumber.StepDefs.GridPage.MagnifyingGlassShouldBeDisplayedCorrectly(GridPage.java:123)
+	at ✽.Then Magnifying glass should be displayed correctly(com/ankitnandwani/cucumber/Features/GridPage.feature:25)
+</failure>
+  </testcase>
+  <testcase classname="| firefox | 1200 | 700 | laptop |" name="| firefox | 1200 | 700 | laptop |" time="0">
+    <failure message="
+The following assertion failed:
+1) expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+" type="org.assertj.core.api.SoftAssertionError">org.assertj.core.api.SoftAssertionError: 
+The following assertion failed:
+1) expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:75)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at com.ankitnandwani.cucumber.StepDefs.GridPage.MagnifyingGlassShouldBeDisplayedCorrectly(GridPage.java:123)
+	at ✽.Then Magnifying glass should be displayed correctly(com/ankitnandwani/cucumber/Features/GridPage.feature:25)
+</failure>
+  </testcase>
+  <testcase classname="| edge | 1200 | 700 | laptop |" name="Given I run the test on edge with 1200 and 700" time="0"/>
+  <testcase classname="| edge | 1200 | 700 | laptop |" name="And I am at AppliFashion Homepage for Task 1 test in laptop" time="0"/>
+  <testcase classname="| edge | 1200 | 700 | laptop |" name="When I do nothing" time="0.001"/>
+  <testcase classname="| edge | 1200 | 700 | laptop |" name="Then Magnifying glass should be displayed correctly" time="0">
+    <failure message="
+The following assertion failed:
+1) expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+" type="org.assertj.core.api.SoftAssertionError">org.assertj.core.api.SoftAssertionError: 
+The following assertion failed:
+1) expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:75)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at com.ankitnandwani.cucumber.StepDefs.GridPage.MagnifyingGlassShouldBeDisplayedCorrectly(GridPage.java:123)
+	at ✽.Then Magnifying glass should be displayed correctly(com/ankitnandwani/cucumber/Features/GridPage.feature:25)
+</failure>
+  </testcase>
+  <testcase classname="| edge | 1200 | 700 | laptop |" name="| edge | 1200 | 700 | laptop |" time="0">
+    <failure message="
+The following assertion failed:
+1) expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+" type="org.assertj.core.api.SoftAssertionError">org.assertj.core.api.SoftAssertionError: 
+The following assertion failed:
+1) expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:75)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at com.ankitnandwani.cucumber.StepDefs.GridPage.MagnifyingGlassShouldBeDisplayedCorrectly(GridPage.java:123)
+	at ✽.Then Magnifying glass should be displayed correctly(com/ankitnandwani/cucumber/Features/GridPage.feature:25)
+</failure>
+  </testcase>
+  <testcase classname="| chrome | 768 | 700 | tablet |" name="Given I run the test on chrome with 768 and 700" time="0"/>
+  <testcase classname="| chrome | 768 | 700 | tablet |" name="And I am at AppliFashion Homepage for Task 1 test in tablet" time="0"/>
+  <testcase classname="| chrome | 768 | 700 | tablet |" name="When I do nothing" time="0"/>
+  <testcase classname="| chrome | 768 | 700 | tablet |" name="Then Magnifying glass should be displayed correctly" time="0.001">
+    <failure message="
+The following assertion failed:
+1) expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+" type="org.assertj.core.api.SoftAssertionError">org.assertj.core.api.SoftAssertionError: 
+The following assertion failed:
+1) expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:75)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at com.ankitnandwani.cucumber.StepDefs.GridPage.MagnifyingGlassShouldBeDisplayedCorrectly(GridPage.java:123)
+	at ✽.Then Magnifying glass should be displayed correctly(com/ankitnandwani/cucumber/Features/GridPage.feature:25)
+</failure>
+  </testcase>
+  <testcase classname="| chrome | 768 | 700 | tablet |" name="| chrome | 768 | 700 | tablet |" time="0.001">
+    <failure message="
+The following assertion failed:
+1) expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+" type="org.assertj.core.api.SoftAssertionError">org.assertj.core.api.SoftAssertionError: 
+The following assertion failed:
+1) expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:75)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at com.ankitnandwani.cucumber.StepDefs.GridPage.MagnifyingGlassShouldBeDisplayedCorrectly(GridPage.java:123)
+	at ✽.Then Magnifying glass should be displayed correctly(com/ankitnandwani/cucumber/Features/GridPage.feature:25)
+</failure>
+  </testcase>
+  <testcase classname="| firefox | 768 | 700 | tablet |" name="Given I run the test on firefox with 768 and 700" time="0"/>
+  <testcase classname="| firefox | 768 | 700 | tablet |" name="And I am at AppliFashion Homepage for Task 1 test in tablet" time="0"/>
+  <testcase classname="| firefox | 768 | 700 | tablet |" name="When I do nothing" time="0"/>
+  <testcase classname="| firefox | 768 | 700 | tablet |" name="Then Magnifying glass should be displayed correctly" time="0">
+    <failure message="
+The following assertion failed:
+1) expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+" type="org.assertj.core.api.SoftAssertionError">org.assertj.core.api.SoftAssertionError: 
+The following assertion failed:
+1) expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:75)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at com.ankitnandwani.cucumber.StepDefs.GridPage.MagnifyingGlassShouldBeDisplayedCorrectly(GridPage.java:123)
+	at ✽.Then Magnifying glass should be displayed correctly(com/ankitnandwani/cucumber/Features/GridPage.feature:25)
+</failure>
+  </testcase>
+  <testcase classname="| firefox | 768 | 700 | tablet |" name="| firefox | 768 | 700 | tablet |" time="0">
+    <failure message="
+The following assertion failed:
+1) expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+" type="org.assertj.core.api.SoftAssertionError">org.assertj.core.api.SoftAssertionError: 
+The following assertion failed:
+1) expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:75)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at com.ankitnandwani.cucumber.StepDefs.GridPage.MagnifyingGlassShouldBeDisplayedCorrectly(GridPage.java:123)
+	at ✽.Then Magnifying glass should be displayed correctly(com/ankitnandwani/cucumber/Features/GridPage.feature:25)
+</failure>
+  </testcase>
+  <testcase classname="| edge | 768 | 700 | tablet |" name="Given I run the test on edge with 768 and 700" time="0"/>
+  <testcase classname="| edge | 768 | 700 | tablet |" name="And I am at AppliFashion Homepage for Task 1 test in tablet" time="0"/>
+  <testcase classname="| edge | 768 | 700 | tablet |" name="When I do nothing" time="0"/>
+  <testcase classname="| edge | 768 | 700 | tablet |" name="Then Magnifying glass should be displayed correctly" time="0.001">
+    <failure message="
+The following assertion failed:
+1) expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+" type="org.assertj.core.api.SoftAssertionError">org.assertj.core.api.SoftAssertionError: 
+The following assertion failed:
+1) expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:75)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at com.ankitnandwani.cucumber.StepDefs.GridPage.MagnifyingGlassShouldBeDisplayedCorrectly(GridPage.java:123)
+	at ✽.Then Magnifying glass should be displayed correctly(com/ankitnandwani/cucumber/Features/GridPage.feature:25)
+</failure>
+  </testcase>
+  <testcase classname="| edge | 768 | 700 | tablet |" name="| edge | 768 | 700 | tablet |" time="0.001">
+    <failure message="
+The following assertion failed:
+1) expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+" type="org.assertj.core.api.SoftAssertionError">org.assertj.core.api.SoftAssertionError: 
+The following assertion failed:
+1) expected:&lt;[fals]e&gt; but was:&lt;[tru]e&gt;
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:75)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at com.ankitnandwani.cucumber.StepDefs.GridPage.MagnifyingGlassShouldBeDisplayedCorrectly(GridPage.java:123)
+	at ✽.Then Magnifying glass should be displayed correctly(com/ankitnandwani/cucumber/Features/GridPage.feature:25)
+</failure>
+  </testcase>
+  <testcase classname="| chrome | 500 | 700 | mobile |" name="Given I run the test on chrome with 500 and 700" time="0"/>
+  <testcase classname="| chrome | 500 | 700 | mobile |" name="And I am at AppliFashion Homepage for Task 1 test in mobile" time="0"/>
+  <testcase classname="| chrome | 500 | 700 | mobile |" name="When I do nothing" time="0"/>
+  <testcase classname="| chrome | 500 | 700 | mobile |" name="Then Magnifying glass should be displayed correctly" time="0"/>
+  <testcase classname="| chrome | 500 | 700 | mobile |" name="| chrome | 500 | 700 | mobile |" time="1.16"/>
+  <testcase classname="| chrome | 1200 | 700 | laptop |" name="Given I run the test on chrome with 1200 and 700" time="0"/>
+  <testcase classname="| chrome | 1200 | 700 | laptop |" name="And I am at AppliFashion Homepage for Task 1 test in laptop" time="0"/>
+  <testcase classname="| chrome | 1200 | 700 | laptop |" name="When I click the white filter" time="0"/>
+  <testcase classname="| chrome | 1200 | 700 | laptop |" name="Then only white shoes should be displayed" time="0"/>
+  <testcase classname="| chrome | 1200 | 700 | laptop |" name="| chrome | 1200 | 700 | laptop |" time="0.948"/>
+  <testcase classname="| firefox | 1200 | 700 | laptop |" name="Given I run the test on firefox with 1200 and 700" time="0"/>
+  <testcase classname="| firefox | 1200 | 700 | laptop |" name="And I am at AppliFashion Homepage for Task 1 test in laptop" time="0"/>
+  <testcase classname="| firefox | 1200 | 700 | laptop |" name="When I click the white filter" time="0"/>
+  <testcase classname="| firefox | 1200 | 700 | laptop |" name="Then only white shoes should be displayed" time="0"/>
+  <testcase classname="| firefox | 1200 | 700 | laptop |" name="| firefox | 1200 | 700 | laptop |" time="8.673"/>
+  <testcase classname="| edge | 1200 | 700 | laptop |" name="Given I run the test on edge with 1200 and 700" time="0"/>
+  <testcase classname="| edge | 1200 | 700 | laptop |" name="And I am at AppliFashion Homepage for Task 1 test in laptop" time="0"/>
+  <testcase classname="| edge | 1200 | 700 | laptop |" name="When I click the white filter" time="0"/>
+  <testcase classname="| edge | 1200 | 700 | laptop |" name="Then only white shoes should be displayed" time="0"/>
+  <testcase classname="| edge | 1200 | 700 | laptop |" name="| edge | 1200 | 700 | laptop |" time="1.525"/>
+  <testcase classname="| chrome | 768 | 700 | tablet |" name="Given I run the test on chrome with 768 and 700" time="0.001"/>
+  <testcase classname="| chrome | 768 | 700 | tablet |" name="And I am at AppliFashion Homepage for Task 1 test in tablet" time="0"/>
+  <testcase classname="| chrome | 768 | 700 | tablet |" name="When I click the white filter" time="0"/>
+  <testcase classname="| chrome | 768 | 700 | tablet |" name="Then only white shoes should be displayed" time="0"/>
+  <testcase classname="| chrome | 768 | 700 | tablet |" name="| chrome | 768 | 700 | tablet |" time="0.966"/>
+  <testcase classname="| firefox | 768 | 700 | tablet |" name="Given I run the test on firefox with 768 and 700" time="0"/>
+  <testcase classname="| firefox | 768 | 700 | tablet |" name="And I am at AppliFashion Homepage for Task 1 test in tablet" time="0"/>
+  <testcase classname="| firefox | 768 | 700 | tablet |" name="When I click the white filter" time="0"/>
+  <testcase classname="| firefox | 768 | 700 | tablet |" name="Then only white shoes should be displayed" time="0"/>
+  <testcase classname="| firefox | 768 | 700 | tablet |" name="| firefox | 768 | 700 | tablet |" time="11.585"/>
+  <testcase classname="| edge | 768 | 700 | tablet |" name="Given I run the test on edge with 768 and 700" time="0"/>
+  <testcase classname="| edge | 768 | 700 | tablet |" name="And I am at AppliFashion Homepage for Task 1 test in tablet" time="0"/>
+  <testcase classname="| edge | 768 | 700 | tablet |" name="When I click the white filter" time="0"/>
+  <testcase classname="| edge | 768 | 700 | tablet |" name="Then only white shoes should be displayed" time="0"/>
+  <testcase classname="| edge | 768 | 700 | tablet |" name="| edge | 768 | 700 | tablet |" time="1.252"/>
+  <testcase classname="| chrome | 500 | 700 | mobile |" name="Given I run the test on chrome with 500 and 700" time="0"/>
+  <testcase classname="| chrome | 500 | 700 | mobile |" name="And I am at AppliFashion Homepage for Task 1 test in mobile" time="0"/>
+  <testcase classname="| chrome | 500 | 700 | mobile |" name="When I click the white filter" time="0"/>
+  <testcase classname="| chrome | 500 | 700 | mobile |" name="Then only white shoes should be displayed" time="0"/>
+  <testcase classname="| chrome | 500 | 700 | mobile |" name="| chrome | 500 | 700 | mobile |" time="1.155"/>
 </testsuite>

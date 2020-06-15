@@ -1,4 +1,144 @@
 -------------------------------------------------------------------------------
 Test set: com.ankitnandwani.cucumber.RunCukesTest
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 0, Errors: 0, Skipped: 4, Time elapsed: 43.587 sec
+Tests run: 105, Failures: 14, Errors: 0, Skipped: 0, Time elapsed: 344.213 sec <<< FAILURE!
+Then SearchBar should be displayed correctly(| chrome | 500 | 700 | mobile |)  Time elapsed: 0.005 sec  <<< FAILURE!
+org.assertj.core.api.SoftAssertionError: 
+The following assertion failed:
+1) expected:<[fals]e> but was:<[tru]e>
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:75)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at com.ankitnandwani.cucumber.StepDefs.GridPage.SearchBarShouldBeDisplayedCorrectly(GridPage.java:88)
+	at ✽.Then SearchBar should be displayed correctly(com/ankitnandwani/cucumber/Features/GridPage.feature:8)
+
+| chrome | 500 | 700 | mobile |  Time elapsed: 0.006 sec  <<< FAILURE!
+org.assertj.core.api.SoftAssertionError: 
+The following assertion failed:
+1) expected:<[fals]e> but was:<[tru]e>
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:75)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at com.ankitnandwani.cucumber.StepDefs.GridPage.SearchBarShouldBeDisplayedCorrectly(GridPage.java:88)
+	at ✽.Then SearchBar should be displayed correctly(com/ankitnandwani/cucumber/Features/GridPage.feature:8)
+
+Then Magnifying glass should be displayed correctly(| chrome | 1200 | 700 | laptop |)  Time elapsed: 0 sec  <<< FAILURE!
+org.assertj.core.api.SoftAssertionError: 
+The following assertion failed:
+1) expected:<[fals]e> but was:<[tru]e>
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:75)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at com.ankitnandwani.cucumber.StepDefs.GridPage.MagnifyingGlassShouldBeDisplayedCorrectly(GridPage.java:123)
+	at ✽.Then Magnifying glass should be displayed correctly(com/ankitnandwani/cucumber/Features/GridPage.feature:25)
+
+| chrome | 1200 | 700 | laptop |  Time elapsed: 0 sec  <<< FAILURE!
+org.assertj.core.api.SoftAssertionError: 
+The following assertion failed:
+1) expected:<[fals]e> but was:<[tru]e>
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:75)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at com.ankitnandwani.cucumber.StepDefs.GridPage.MagnifyingGlassShouldBeDisplayedCorrectly(GridPage.java:123)
+	at ✽.Then Magnifying glass should be displayed correctly(com/ankitnandwani/cucumber/Features/GridPage.feature:25)
+
+Then Magnifying glass should be displayed correctly(| firefox | 1200 | 700 | laptop |)  Time elapsed: 0 sec  <<< FAILURE!
+org.assertj.core.api.SoftAssertionError: 
+The following assertion failed:
+1) expected:<[fals]e> but was:<[tru]e>
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:75)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at com.ankitnandwani.cucumber.StepDefs.GridPage.MagnifyingGlassShouldBeDisplayedCorrectly(GridPage.java:123)
+	at ✽.Then Magnifying glass should be displayed correctly(com/ankitnandwani/cucumber/Features/GridPage.feature:25)
+
+| firefox | 1200 | 700 | laptop |  Time elapsed: 0 sec  <<< FAILURE!
+org.assertj.core.api.SoftAssertionError: 
+The following assertion failed:
+1) expected:<[fals]e> but was:<[tru]e>
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:75)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at com.ankitnandwani.cucumber.StepDefs.GridPage.MagnifyingGlassShouldBeDisplayedCorrectly(GridPage.java:123)
+	at ✽.Then Magnifying glass should be displayed correctly(com/ankitnandwani/cucumber/Features/GridPage.feature:25)
+
+Then Magnifying glass should be displayed correctly(| edge | 1200 | 700 | laptop |)  Time elapsed: 0 sec  <<< FAILURE!
+org.assertj.core.api.SoftAssertionError: 
+The following assertion failed:
+1) expected:<[fals]e> but was:<[tru]e>
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:75)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at com.ankitnandwani.cucumber.StepDefs.GridPage.MagnifyingGlassShouldBeDisplayedCorrectly(GridPage.java:123)
+	at ✽.Then Magnifying glass should be displayed correctly(com/ankitnandwani/cucumber/Features/GridPage.feature:25)
+
+| edge | 1200 | 700 | laptop |  Time elapsed: 0 sec  <<< FAILURE!
+org.assertj.core.api.SoftAssertionError: 
+The following assertion failed:
+1) expected:<[fals]e> but was:<[tru]e>
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:75)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at com.ankitnandwani.cucumber.StepDefs.GridPage.MagnifyingGlassShouldBeDisplayedCorrectly(GridPage.java:123)
+	at ✽.Then Magnifying glass should be displayed correctly(com/ankitnandwani/cucumber/Features/GridPage.feature:25)
+
+Then Magnifying glass should be displayed correctly(| chrome | 768 | 700 | tablet |)  Time elapsed: 0.001 sec  <<< FAILURE!
+org.assertj.core.api.SoftAssertionError: 
+The following assertion failed:
+1) expected:<[fals]e> but was:<[tru]e>
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:75)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at com.ankitnandwani.cucumber.StepDefs.GridPage.MagnifyingGlassShouldBeDisplayedCorrectly(GridPage.java:123)
+	at ✽.Then Magnifying glass should be displayed correctly(com/ankitnandwani/cucumber/Features/GridPage.feature:25)
+
+| chrome | 768 | 700 | tablet |  Time elapsed: 0.001 sec  <<< FAILURE!
+org.assertj.core.api.SoftAssertionError: 
+The following assertion failed:
+1) expected:<[fals]e> but was:<[tru]e>
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:75)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at com.ankitnandwani.cucumber.StepDefs.GridPage.MagnifyingGlassShouldBeDisplayedCorrectly(GridPage.java:123)
+	at ✽.Then Magnifying glass should be displayed correctly(com/ankitnandwani/cucumber/Features/GridPage.feature:25)
+
+Then Magnifying glass should be displayed correctly(| firefox | 768 | 700 | tablet |)  Time elapsed: 0 sec  <<< FAILURE!
+org.assertj.core.api.SoftAssertionError: 
+The following assertion failed:
+1) expected:<[fals]e> but was:<[tru]e>
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:75)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at com.ankitnandwani.cucumber.StepDefs.GridPage.MagnifyingGlassShouldBeDisplayedCorrectly(GridPage.java:123)
+	at ✽.Then Magnifying glass should be displayed correctly(com/ankitnandwani/cucumber/Features/GridPage.feature:25)
+
+| firefox | 768 | 700 | tablet |  Time elapsed: 0 sec  <<< FAILURE!
+org.assertj.core.api.SoftAssertionError: 
+The following assertion failed:
+1) expected:<[fals]e> but was:<[tru]e>
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:75)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at com.ankitnandwani.cucumber.StepDefs.GridPage.MagnifyingGlassShouldBeDisplayedCorrectly(GridPage.java:123)
+	at ✽.Then Magnifying glass should be displayed correctly(com/ankitnandwani/cucumber/Features/GridPage.feature:25)
+
+Then Magnifying glass should be displayed correctly(| edge | 768 | 700 | tablet |)  Time elapsed: 0.001 sec  <<< FAILURE!
+org.assertj.core.api.SoftAssertionError: 
+The following assertion failed:
+1) expected:<[fals]e> but was:<[tru]e>
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:75)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at com.ankitnandwani.cucumber.StepDefs.GridPage.MagnifyingGlassShouldBeDisplayedCorrectly(GridPage.java:123)
+	at ✽.Then Magnifying glass should be displayed correctly(com/ankitnandwani/cucumber/Features/GridPage.feature:25)
+
+| edge | 768 | 700 | tablet |  Time elapsed: 0.001 sec  <<< FAILURE!
+org.assertj.core.api.SoftAssertionError: 
+The following assertion failed:
+1) expected:<[fals]e> but was:<[tru]e>
+
+	at org.assertj.core.error.AssertionErrorCreator.multipleSoftAssertionsError(AssertionErrorCreator.java:75)
+	at org.assertj.core.api.AbstractSoftAssertions.assertAll(AbstractSoftAssertions.java:37)
+	at com.ankitnandwani.cucumber.StepDefs.GridPage.MagnifyingGlassShouldBeDisplayedCorrectly(GridPage.java:123)
+	at ✽.Then Magnifying glass should be displayed correctly(com/ankitnandwani/cucumber/Features/GridPage.feature:25)
+

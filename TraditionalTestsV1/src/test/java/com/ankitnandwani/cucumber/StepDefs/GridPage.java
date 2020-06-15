@@ -3,35 +3,49 @@ package com.ankitnandwani.cucumber.StepDefs;
 import com.ankitnandwani.cucumber.Browser;
 import com.ankitnandwani.cucumber.Hooks;
 import com.ankitnandwani.cucumber.Repo.AppliFashion.FashionHome;
-import com.applitools.eyes.RectangleSize;
-import com.applitools.eyes.selenium.Eyes;
-import com.applitools.eyes.selenium.fluent.Target;
+import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.assertj.core.api.SoftAssertions;
 import org.junit.Assert;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
+
+import java.util.Properties;
 
 public class GridPage {
 
     private Browser browser;
     private WebDriver driver;
-    private Eyes eyes;
     private FashionHome fashionHome;
+    private  String mode;
+    private String browserInstance;
+    private String viewport;
     Hooks hooks = new Hooks();
+
 
     public GridPage(Browser browser) {
         this.browser = browser;
     }
 
-    @Given("^I am at AppliFashion Homepage for (.*) test$")
-    public void IAmAtAppliFashionHomepageForTest(String testName){
-        driver = browser.getDriver();
-        eyes = browser.getEyes();
-        fashionHome = browser.getFashionHome();
+    @Given("^I run the test on (.*) with (.*) and (.*)$")
+    public void IRunTheTestOn(String _browserInstance, String _width, String _height){
+        browserInstance = _browserInstance;
+        viewport = _width + "x" + _height;
+        driver = browser.getDriver(_browserInstance, _width, _height);
+    }
+
+    @And("^I am at AppliFashion Homepage for (.*) test in (.*)$")
+    public void IAmAtAppliFashionHomepageForTestIn(String testName, String _mode){
+        mode = _mode;
+        fashionHome = new FashionHome(driver);
         driver.get("https://demo.applitools.com/gridHackathonV1.html");
-        eyes.open(driver, "AppliFashion", testName, new RectangleSize(800,600));
 
     }
 
@@ -40,54 +54,114 @@ public class GridPage {
 
     }
 
-    @Then("^Page should be displayed correctly for step (.*)$")
-    public void ThenPageShouldBeDisplayedCorrectlyForStep(String stepName){
+    @Then("^SearchBar should be displayed correctly$")
+    public void SearchBarShouldBeDisplayedCorrectly(){
+        SoftAssertions softly = new SoftAssertions();
+        switch (mode){
+            case "laptop":
+            case "tablet":
+                //make sure search bar is displayed in tablet mode
+                //make sure search bar is displayed in laptop mode
+                softly.assertThat(hooks.hackathonReporter(1
+                        , "SearchBar"
+                        , fashionHome.getSearchBar().getAttribute("id")
+                        , fashionHome.getSearchBar().isEnabled()
+                        , browserInstance
+                        , viewport
+                        , mode)).isTrue();
 
-        //switch statement is being used here to keep it extesible as more test cases are added we can code specifc
-        //behaviour for particular test
-        switch (stepName){
-            case "Filter Results":
-                eyes.check(Target.region(fashionHome.getProductGrid()).withName(stepName));
                 break;
 
-            //If we just need full page screenshot, we don't need to write seperate cases for them
-            default:
-                eyes.check(Target.window().fully().withName(stepName));
+            case "mobile":
+                //make sure search bar is NOT displayed in mobile mode
+                softly.assertThat(hooks.hackathonReporter(1
+                        , "SearchBar"
+                        , fashionHome.getSearchBar().getAttribute("id")
+                        , fashionHome.getSearchBar().isEnabled()
+                        , browserInstance
+                        , viewport
+                        , mode)).isFalse();
+
+                break;
         }
 
-        eyes.closeAsync();
-
+        softly.assertAll();
     }
 
-    @When("^I apply filter for (.*) shoes$")
-    public void IApplyFilterFor(String filter){
-        //Check if Black check box is already visible, click it
-        //else click the filter button and then the checkbox
+    @Then("^Magnifying glass should be displayed correctly$")
+    public void MagnifyingGlassShouldBeDisplayedCorrectly(){
+        SoftAssertions softly = new SoftAssertions();
+        switch (mode){
+            case "laptop":
+            case "tablet":
+
+                //make sure Magnifying glass of mobile is NOT displayed in laptop mode
+                softly.assertThat(hooks.hackathonReporter(1
+                        , "Magnifying glass"
+                        , fashionHome.getMagnifyingGlass().getAttribute("id")
+                        , fashionHome.getMagnifyingGlass().isEnabled()
+                        , browserInstance
+                        , viewport
+                        , mode)).isFalse();
+
+                break;
+
+            case "mobile":
+
+                //make sure Magnifying glass is displayed in mobile mode
+                softly.assertThat(hooks.hackathonReporter(1
+                        , "Magnifying glass"
+                        , fashionHome.getMagnifyingGlass().getAttribute("id")
+                        , fashionHome.getMagnifyingGlass().isEnabled()
+                        , browserInstance
+                        , viewport
+                        , mode)).isTrue();
+
+                break;
+        }
+
+        softly.assertAll();
+    }
+
+    @When("^I click the (.*) filter$")
+    public void iClickTheWhiteFilter(String filter){
+
         try {
-            hooks.explicitWait(driver, 3, fashionHome.getBlackFilterCheckbox());
+            hooks.explicitWait(driver, 3, fashionHome.getWhiteFilterCheckbox());
         } catch (TimeoutException e){
             fashionHome.clickFilterButton();
-            hooks.explicitWait(driver, 3, fashionHome.getBlackFilterCheckbox());
+            hooks.explicitWait(driver, 3, fashionHome.getWhiteFilterCheckbox());
         }
 
         switch (filter){
-            case "black":
-                fashionHome.clickBlackFilterCheckbox();
+            case "white":
+                fashionHome.clickWhiteFilterCheckbox();
         }
 
         fashionHome.clickApplyFilterButton();
+
     }
 
-    @When("^I click on first black shoe and product details page is displayed$")
-    public void iClickOnFirstBlackShoe(){
-        fashionHome.clickFirstBlackShoe();
-        hooks.explicitWait(driver, 5, fashionHome.getCartButton());  //make sure product page is opened
-    }
+    @Then("^only white shoes should be displayed$")
+    public void onlyWhiteShoesShouldBeDisplayed(){
+        SoftAssertions softly = new SoftAssertions();
+        switch (mode){
+            case "laptop":
+            case "tablet":
+            case "mobile":
 
-//    @Then("^verify there are (.*) (.*) shoes and everything works and looks good$")
-//    public void verifyThereAreShoesAndEverythingWorksAndLooksGood(String count, String color){
-//        //Assert.assertEquals("Product Count Mismatch", Integer.parseInt(count), fashionHome.getNumberOfItems());
-//        eyes.check(Target.window().fully().withName("Filter Results"));
-//        eyes.closeAsync();
-//    }
+                //make sure only 1 shoe is displayed for white
+                softly.assertThat(hooks.hackathonReporter(1
+                        , "Filter"
+                        , fashionHome.getWhiteFilterCheckbox().getAttribute("id")
+                        , fashionHome.getNumberOfItems() == 1
+                        , browserInstance
+                        , viewport
+                        , mode)).isTrue();
+
+                break;
+        }
+
+        softly.assertAll();
+    }
 }

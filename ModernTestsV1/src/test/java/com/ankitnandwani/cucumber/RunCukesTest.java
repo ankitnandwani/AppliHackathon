@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
  */
 
 @RunWith(Cucumber.class)
-@CucumberOptions(tags = {"@test"}
+@CucumberOptions(tags = {"@run"}
 
 )
 public class RunCukesTest {

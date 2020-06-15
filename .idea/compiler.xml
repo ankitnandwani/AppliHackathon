@@ -8,12 +8,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ModernTestsV2" />
         <module name="ModernTestsV1" />
+        <module name="TraditionalTestsV2" />
+        <module name="TraditionalTestsV1" />
+        <module name="TraditionalTestsV1 (1)" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="CucumberPrototype" target="1.8" />
       <module name="ModernTestsV1" target="1.8" />
       <module name="ModernTestsV2" target="1.8" />
+      <module name="TraditionalTestsV1" target="1.8" />
+      <module name="TraditionalTestsV1 (1)" target="1.8" />
+      <module name="TraditionalTestsV2" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

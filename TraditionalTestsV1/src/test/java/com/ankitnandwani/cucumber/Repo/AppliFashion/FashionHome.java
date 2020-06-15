@@ -14,15 +14,29 @@ public class FashionHome {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(id = "SPAN__checkmark__107")
-    private WebElement blackFilterCheckbox;
+    @FindBy(id = "INPUTtext____42")
+    private WebElement searchBar;
 
-    public WebElement getBlackFilterCheckbox() {
-        return blackFilterCheckbox;
+    public WebElement getSearchBar() {
+        return searchBar;
     }
 
-    public void clickBlackFilterCheckbox() {
-        blackFilterCheckbox.click();
+    @FindBy(id = "A__btnsearchm__59")
+    private WebElement magnifyingGlass;
+
+    public WebElement getMagnifyingGlass() {
+        return magnifyingGlass;
+    }
+
+    @FindBy(id = "SPAN__checkmark__112")
+    private WebElement whiteFilterCheckbox;
+
+    public WebElement getWhiteFilterCheckbox() {
+        return whiteFilterCheckbox;
+    }
+
+    public void clickWhiteFilterCheckbox() {
+        whiteFilterCheckbox.click();
     }
 
     @FindBy(id = "ti-filter")
@@ -46,24 +60,5 @@ public class FashionHome {
         return numberOfItems.size();
     }
 
-    @FindBy(id = "product_grid")
-    private WebElement productGrid;
 
-    public WebElement getProductGrid() {
-        return productGrid;
-    }
-
-    @FindBy(xpath = "//div[@id='product_grid']/div/div/a")
-    private WebElement firstShoe;
-
-    public void clickFirstBlackShoe(){
-        firstShoe.click();
-    }
-
-    @FindBy(id = "A__btn__114")
-    private WebElement cartButton;
-
-    public WebElement getCartButton() {
-        return cartButton;
-    }
 }

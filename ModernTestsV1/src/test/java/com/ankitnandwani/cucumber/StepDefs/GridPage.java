@@ -9,7 +9,6 @@ import com.applitools.eyes.selenium.fluent.Target;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
-import org.junit.Assert;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 
@@ -71,7 +70,7 @@ public class GridPage {
         }
 
         switch (filter){
-            case "black":
+            case "white":
                 fashionHome.clickBlackFilterCheckbox();
         }
 
@@ -84,10 +83,4 @@ public class GridPage {
         hooks.explicitWait(driver, 5, fashionHome.getCartButton());  //make sure product page is opened
     }
 
-//    @Then("^verify there are (.*) (.*) shoes and everything works and looks good$")
-//    public void verifyThereAreShoesAndEverythingWorksAndLooksGood(String count, String color){
-//        //Assert.assertEquals("Product Count Mismatch", Integer.parseInt(count), fashionHome.getNumberOfItems());
-//        eyes.check(Target.window().fully().withName("Filter Results"));
-//        eyes.closeAsync();
-//    }
 }
